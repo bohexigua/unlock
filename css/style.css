@@ -1,0 +1,92 @@
+/*移动端最佳字体*/
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+}
+
+hr{
+    margin: 0;
+    border-color: red;
+    position: absolute;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+}
+
+#unlock{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    /*overflow: hidden;*/
+}
+
+#unlock h1{
+    margin: 0;
+    padding: 22px;
+    background: #f3f3f3;
+    text-align: center;
+    border-bottom: 2px solid #9b9b9b;
+}
+
+.unlock-bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAa0lEQVRYR2P88OHTf4YBBIyjDhgNgdEQGA2B0RAYDYEhFwK/fv1i+Pz5K7j+5OXlZmBjY6OoLiW5Nnz79j3DjVt3wJZqqKkwCAsLjjAHDHgUUBTeWDSTnAZGHTAaAqMhMBoCoyEwGgLUDgEALVaSQWFGuJgAAAAASUVORK5CYII=");
+}
+
+.unlock-circle{
+    width: 200px;
+    height: 300px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.unlock-circle li{
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    border-radius: 50%;
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid #898989;
+}
+
+.unlock-circle li:nth-child(3n+3){
+    margin-right: 0;
+}
+
+.unlock-prompt{
+    text-align: center;
+}
+
+.unlock-radio{
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+/*iPhone 5 竖屏*/
+@media (max-width : 320px) {
+    .unlock-circle li{
+        width: 30px;
+        height: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+    .unlock-circle{
+        width: 150px;
+        height: 240px;
+    }
+}
+
+.unlock-circle .unlock-selected{
+    background-color: darkorange;
+    border-color: red;
+}
+
